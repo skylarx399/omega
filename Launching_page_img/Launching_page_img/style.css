@@ -1,0 +1,129 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 1%;
+    position: absolute;
+}
+.logo{
+    top: -150px;
+    right: 0;
+    left: -10px;
+    padding: 0;
+    max-width: 30%;
+    height:auto ;
+    position: absolute;
+}
+/*.logo{
+    width: 30%;
+    height: 75%;
+    image-resolution: 1920px 720px;
+    position: absolute;
+    top: -200px;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    cursor: pointer;
+}*/
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content p{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 43px;
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.content p span{    
+        color: #F94C10;
+      }
+.content h1{
+    position: relative;
+    top: 80px;
+    right: 0;
+    left: 30px;
+    font-size: 100px;
+    font-weight: 600;
+    
+}
+.content h3{
+    position: relative;
+    top: 100px;
+    font-size: 13px;
+    left: 33px;
+}
+
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: -50%;
+    bottom: 0;
+    animation: rocket 2s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+.icon {
+    position: absolute;
+    top: 75%;
+    left: 50px;
+    bottom: -1%;
+}
+
+.icon img {
+    position: relative;
+    /*top: -20px;
+    left: -30px;*/
+    width: 30px;
+    display: flex;
+    margin: 70px 5px;
+    float: left;
+}
+.icon span{
+    top: 20px;
+    bottom: -30px;
+}
+.content h2{
+    position: relative;
+    top: 120px;
+    font-size: 13px;
+    left: 33px;
+}
+.container h3{
+    position: relative;
+    top: 730px;
+    font-size: 13px;
+    left: 33px;
+    color: #FFF;
+}
+.container h4{
+    position: relative;
+    top: 790px;
+    font-size: 50px;
+    left: 33px;
+    color: #FFF;
+}

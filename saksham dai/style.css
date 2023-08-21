@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --min-color: blue;
+    --sc-color: #3ec1d5;
+    --th-color: #aeaeaa;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0.5rem;
+    font-size: 86%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: right;
+    box-shadow: 0 .5rem 2.5rem rgba(0, 0, 0, .1);
+    justify-content: space-between;
+    padding: 1rem 3%;
+    background: #fff;
+    z-index: 1001;
+}
+
+header .logo {
+    font-size: 3.2rem;
+    color: var(--min-color);
+    padding: 0.4rem;
+}
+
+header .navbar a {
+    margin: 0 0.8rem;
+    font-size: 2.9rem;
+    color: var(--min-color);
+    padding: 1.4rem;
+    box-shadow: 20px;
+}
+
+header .navbar a:hover,
+header .fa-bars:hover {
+    color: var(--sc-color)
+}
+
+header .fa-bars {
+    font-size: 2.8rem;
+    color: var(--min-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  media query  */
+
+@media(max-width: 750px) {
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        /*top: 7.5rem;*/
+        top: 1000rem;
+        left: 0;
+        text-align: center;
+        background: rgba(10, 10, 9, 0.6);
+        width: 100%;
+    }
+
+    header .navbar.active {
+        top: 7.5rem;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 0.3rem 0;
+        padding: 1rem;
+        font-size: 2.6rem;
+        color: var(--min-color);
+    }
+
+    header .navbar a:hover {
+        background: var(--min-color);
+    }
+}

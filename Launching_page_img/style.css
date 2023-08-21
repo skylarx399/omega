@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: fixed;
+    background-size: cover;
+    padding: 0 1%;
+    position: absolute;
+}
+
+.logo {
+    top: -90px;
+    right: 0;
+    left: 50px;
+    padding: 0;
+    max-width: 30%;
+    height: auto;
+    position: absolute;
+}
+
+.logo {
+    width: 30%;
+    height: 75%;
+    image-resolution: 1920px 720px;
+    position: absolute;
+    top: -200px;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.content {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content p {
+    position: relative;
+    top: -50px;
+    right: 0;
+    left: 43px;
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.content p span {
+    color: #F94C10;
+}
+
+.content h1 {
+    position: relative;
+    top: -40px;
+    right: 0;
+    left: 30px;
+    font-size: 80px;
+    font-weight: 550;
+
+}
+
+.content h3 {
+    position: relative;
+    top: -30px;
+    font-size: 13px;
+    left: 33px;
+}
+
+.rocket {
+    width: 250px;
+    position: absolute;
+    right: -50%;
+    bottom: 0;
+    animation: rocket 2s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 105%;
+        opacity: 10;
+    }
+}
+
+.icon {
+    position: absolute;
+    top: 70%;
+    left: 50px;
+    bottom: 1%;
+}
+
+.icon img {
+    position: relative;
+    top: -20px;
+    left: -30px;
+    width: 55px;
+    display: flex;
+    margin: -25px 5px;
+    float: left;
+}
+
+.icon span {
+    top: 20px;
+    bottom: -30px;
+}
+
+.content h2 {
+    position: relative;
+    top: -10px;
+    font-size: 13px;
+    left: 33px;
+}
+
+.container h3 {
+    position: relative;
+    top: 590px;
+    font-size: 13px;
+    left: 33px;
+    color: #FFF;
+}
+
+.container h4 {
+    position: fixed;
+    top: 690px;
+    font-size: 25px;
+    left: 33px;
+    color: #FFF;
+}
+@media screen and (max-width:900px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    i {
+        font-size: 25px;
+    }
+
+    @media screen and (max-width:800px) {
+        h1 {
+            font-size: 30px;
+        }
+    }
+    
+}
